@@ -1,4 +1,4 @@
-- Actual server logic in src for deployment
+# Welcome to Flights Service
 ## Project Setup
 - Clone the project on your local
 - Execute `npm install` on the same path as of your root directory of the downloaded project 
