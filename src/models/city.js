@@ -1,3 +1,4 @@
+// JS level table definition for the City table
 'use strict';
 const {
   Model
@@ -17,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true
     }
   }, {
     sequelize,
