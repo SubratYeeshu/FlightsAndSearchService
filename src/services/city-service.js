@@ -5,6 +5,8 @@
 const {CityRepository} = require('../repository/index');
 
 class CityService{
+// constructor is optional in the class, we can also write the code without constructor
+
     constructor(){
         this.cityRepository = new CityRepository();
     }
