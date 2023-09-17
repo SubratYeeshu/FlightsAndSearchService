@@ -6,6 +6,7 @@
 // Work of repository layer to interact with models and database
 // Now we will use cuty repository in the city controller to perform CRUD operations on the City table and create APIs.
 
+
 const { City } = require('../models/index');
 
 class CityRepository {
