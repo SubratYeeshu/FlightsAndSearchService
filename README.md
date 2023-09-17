@@ -31,4 +31,7 @@
   - A city has many airports but one airport belongs to a city
   - One airport can have many flights, but a flight belongs to one airport
 
-  
+## Tables 
+
+- City -> id, name, created_at, updated_at
+- Airport -> id, name, address, city_id, created_at, updated_at, Relationship -> City has many airport and airport belongs to a city (1 to Many), city will not have info about Airports (1) instead (many airports) will have information about city
