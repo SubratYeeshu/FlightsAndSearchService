@@ -34,5 +34,14 @@
 ## Tables 
 
 - City -> id, name, created_at, updated_at
+- `npx sequelize model:generate --name City --attributes name:String,cityId:integer`
+
 - Airport -> id, name, address, city_id, created_at, updated_at, Relationship -> City has many airport and airport belongs to a city (1 to Many), city will not have info about Airports (1) instead (many airports) will have information about city
 - `npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer`
+
+- Airplane -> ModelNumber, Capacity
+- `npx sequelize model:generate --name Airplane -- attributes modelNumber:integer,capacity:integer`
+
+- Flights -> FlightNumber, AirplaneId, DepartureAirportId, ArrivalAirportId, ArrivalTime, DepartureTime, Price, BoardingGate, TotalSeats
+- `npx sequelize model:generate --name Flights --attributes flightNumber:String,airplaneId:integer,departureAirportId:integer,arrivalAirportId:integer,arrivalTime:Date,departureTime:Date,price:integer,boardingGate:String,totalSeats:integer`
+
