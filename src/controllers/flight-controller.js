@@ -4,6 +4,17 @@ const flightService = new FlightService();
 
 const create = async (req, res) => {
     try {
+        // If in request body we have a field that is not in the model, it will be ignored, it makes request body bulky and also it is not a good practice to send unwanted data to the server.
+        let flightRequestData = {
+            flightNumber: req.body.flightNumber,
+            departureAirportId: req.body.departureAirportId,
+            arrivalAirportId: req.body.arrivalAirportId,
+            departureTime: req.body.departureTime,
+            arrivalTime: req.body.arrivalTime,
+            price: req.body.price,
+            airplaneId: req.body.airplaneId,
+        }
+
         const flight = await flightService.createFlight(req.body);
         return res.status(201).json({
             data: flight,
