@@ -1,5 +1,6 @@
-# Welcome to Flights Service
+# Flights and Search Service
 ## Project Setup
+
 - Clone the project on your local
 - Execute `npm install` on the same path as of your root directory of the downloaded project 
 - Create `.env` file in the root diretory and add the following environment variable 
@@ -45,3 +46,7 @@
 - Flights -> FlightNumber, AirplaneId, DepartureAirportId, ArrivalAirportId, ArrivalTime, DepartureTime, Price, BoardingGate, TotalSeats
 - `npx sequelize model:generate --name Flights --attributes flightNumber:String,airplaneId:integer,departureAirportId:integer,arrivalAirportId:integer,arrivalTime:Date,departureTime:Date,price:integer,boardingGate:String,totalSeats:integer`
 
+## About the service
+
+- This service is used to search for the flights.
+- API's for searching flight and airports
